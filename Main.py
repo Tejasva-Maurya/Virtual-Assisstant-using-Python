@@ -31,6 +31,6 @@ while 'activate' not in query.lower():
 
 if ('activate') in query.lower() :
         
-    folder_dir = 'Main.py'
+    folder_dir = 'Assistant.py'
     os.startfile(os.path.join(folder_dir))
     speak('activating AI.....')
