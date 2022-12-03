@@ -15,7 +15,7 @@ voices = engine.getProperty('voices')
 engine.setProperty('voice',voices[0].id)
 
 
-MASTER = 'TEJAS'
+MASTER = 'MASTER'
 
 # speak the text   
 def speak(text):
