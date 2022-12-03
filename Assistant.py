@@ -183,6 +183,7 @@ while 'exit' not in start : # loop for contineous running of AI
         folder_dir = 'game.py'
         os.startfile(os.path.join(folder_dir))
         speak('Starting Snake, Water and Gun game .....')
+        start = takeCommand()
 
     elif ' ' in query.lower():
         start = takeCommand()
