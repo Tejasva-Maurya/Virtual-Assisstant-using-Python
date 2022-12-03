@@ -178,7 +178,11 @@ while 'exit' not in start : # loop for contineous running of AI
         strTime = datetime.datetime.now().strftime('%H:%M:%S')
         speak(f'The time is {strTime}')
         start = takeCommand()
-
+    # play game
+    elif (('snake' or 'water' or 'gun') and 'game') in query.lower() :
+        folder_dir = 'game.py'
+        os.startfile(os.path.join(folder_dir))
+        speak('Starting Snake, Water and Gun game .....')
 
     elif ' ' in query.lower():
         start = takeCommand()
